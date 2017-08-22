@@ -1,0 +1,60 @@
+<?
+$aMenuLinks = Array(
+	Array(
+		"Оплата", 
+		"/paymentanddelivery/payment/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Самовывоз", 
+		"/paymentanddelivery/self/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Доставка по Москве и МО", 
+		"/paymentanddelivery/moscow-delivery/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Доставка в регионы РФ", 
+		"/paymentanddelivery/region-delivery/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Возврат", 
+		"/paymentanddelivery/refund/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Гарантия", 
+		"/paymentanddelivery/garanty/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Сервис", 
+		"/paymentanddelivery/service/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Адрес салона", 
+		"/paymentanddelivery/address/", 
+		Array(), 
+		Array(), 
+		"" 
+	)
+);
+?>
