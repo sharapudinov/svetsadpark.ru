@@ -4,7 +4,10 @@ ErrorDocument 404 /404.php
 <IfModule mod_php5.c>
   php_flag session.use_trans_sid off
   #php_value display_errors 1
-  #php_value mbstring.internal_encoding UTF-8
+  php_value register_globals =off
+    #php_value mbstring.func_overload=2
+
+  php_value mbstring.internal_encoding UTF-8
 </IfModule>
 
 <IfModule mod_rewrite.c>
@@ -20,7 +23,7 @@ ErrorDocument 404 /404.php
           RewriteCond %{REQUEST_URI} !\.
           RewriteCond %{REQUEST_URI} !\/$
           RewriteCond %{HTTP_HOST} ^www\.(.*)$
-          RewriteRule ^(.*)$ http://%1/$1/ [L,R=301]
+          RewriteRule ^(.*)$ https://%1/$1/ [L,R=301]
 
           RewriteCond %{REQUEST_URI} !\?
           RewriteCond %{REQUEST_URI} !\&
@@ -28,7 +31,7 @@ ErrorDocument 404 /404.php
           RewriteCond %{REQUEST_URI} !\.
           RewriteCond %{REQUEST_URI} ![^\/]$
           RewriteCond %{HTTP_HOST} ^www\.(.*)$
-          RewriteRule ^(.*)$ http://%1/$1 [L,R=301]
+          RewriteRule ^(.*)$ https://%1/$1 [L,R=301]
 
           RewriteCond %{REQUEST_URI} !\?
           RewriteCond %{REQUEST_URI} !\&
@@ -36,12 +39,12 @@ ErrorDocument 404 /404.php
           RewriteCond %{REQUEST_URI} !\.
           RewriteCond %{REQUEST_URI} !\/$
           RewriteCond %{HTTP_HOST} ^([^www].*)$
-          RewriteRule ^(.*)$ http://%1/$1/ [L,R=301]
+          RewriteRule ^(.*)$ https://%1/$1/ [L,R=301]
 
 
-      # RewriteCond %{HTTPS} off
-      #RewriteCond %{HTTP:X-Forwarded-Proto} !https
-      #RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+      RewriteCond %{HTTPS} off
+      RewriteCond %{HTTP:X-Forwarded-Proto} !https
+      RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
   
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-l

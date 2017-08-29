@@ -2,7 +2,7 @@
 if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true) die();
 
 if (!isset($arParams['YANDEX_VERSION']))
-	$arParams['YANDEX_VERSION'] = '2.0';
+	$arParams['YANDEX_VERSION'] = '1.0';
 
 $arParams['DEV_MODE'] = $arParams['DEV_MODE'] == 'Y' ? 'Y' : 'N';
 

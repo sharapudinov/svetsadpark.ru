@@ -74,7 +74,7 @@
 											<img src="<?=(!empty($arElement["IMG"]["src"]) ? $arElement["IMG"]["src"] : SITE_TEMPLATE_PATH.'/images/empty.png')?>" alt="<?=$arElement["NAME"]?>">
 											<span class="getFastView" data-id="<?=$arElement["ID"]?>"><?=GetMessage("FAST_VIEW_PRODUCT_LABEL")?></span>
 										</a>
-										<a href="<?=$arElement["DETAIL_PAGE_URL"]?>" class="name"><span class="middle"><?=$arElement["NAME"]?></span></a> 
+										<a href="<?=$arElement["DETAIL_PAGE_URL"]?>" class="name"><span class="middle"><?=$arElement["NAME"].' '.$arElement["PROPERTIES"]["CML2_ARTICLE"]["VALUE"]?></span></a>
 										<?if(!empty($arElement["PRICE"])):?>
 											<?if($arElement["COUNT_PRICES"] > 1):?>
 												<a class="price getPricesWindow" data-id="<?=$arElement["ID"]?>">

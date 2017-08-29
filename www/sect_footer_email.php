@@ -1,1 +1,1 @@
-<a href="mailto:info@SvetSadPark.ru" class="email">info@SvetSadPark.ru</a>
+<a href="mailto:info@SvetSadPark.ru" onclick="yaCounter42154374.reachGoal('email_click');return(true)" class="email">info@SvetSadPark.ru</a>

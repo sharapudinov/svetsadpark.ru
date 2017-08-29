@@ -23,7 +23,7 @@ $aMenuLinks = Array(
 	),
 	Array(
 		"Доставка", 
-		"about/delivery/", 
+		"/paymentanddelivery/address/", 
 		Array(), 
 		Array(), 
 		"" 
@@ -37,7 +37,7 @@ $aMenuLinks = Array(
 	),
 	Array(
 		"Контакты", 
-		"about/contacts/", 
+		"paymentdelivery/address", 
 		Array(), 
 		Array(), 
 		"" 

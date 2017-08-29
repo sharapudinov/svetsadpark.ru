@@ -21,11 +21,11 @@ $this->setFrameMode(true);?>
 			<div class="itemRow item" id="<?=$this->GetEditAreaId($arElement["ID"]);?>" data-hide-measure="<?=$arParams["HIDE_MEASURES"]?>" data-price-code="<?=implode("||", $arParams["PRICE_CODE"])?>">
 				<div class="column">
 					<a href="<?=$arElement["DETAIL_PAGE_URL"]?>" class="picture">
-						<img src="<?=$arElement["IMAGE"]["src"]?>" alt="<?if(!empty($arElement["IPROPERTY_VALUES"]["ELEMENT_PREVIEW_PICTURE_FILE_ALT"])):?><?=$arElement["IPROPERTY_VALUES"]["ELEMENT_PREVIEW_PICTURE_FILE_ALT"]?><?else:?><?=$arElement["NAME"]?><?endif;?>" title="<?if(!empty($arElement["IPROPERTY_VALUES"]["ELEMENT_PREVIEW_PICTURE_FILE_TITLE"])):?><?=$arElement["IPROPERTY_VALUES"]["ELEMENT_PREVIEW_PICTURE_FILE_TITLE"]?><?else:?><?=$arElement["NAME"]?><?endif;?>">
+						<img src="<?=$arElement["IMAGE"]["src"]?>" alt="<?if(!empty($arElement["IPROPERTY_VALUES"]["ELEMENT_PREVIEW_PICTURE_FILE_ALT"])):?><?=$arElement["IPROPERTY_VALUES"]["ELEMENT_PREVIEW_PICTURE_FILE_ALT"]?><?else:?><?=$arElement["NAME"]?><?endif;?>" title="<?if(!empty($arElement["IPROPERTY_VALUES"]["ELEMENT_PREVIEW_PICTURE_FILE_TITLE"])):?><?=$arElement["IPROPERTY_VALUES"]["ELEMENT_PREVIEW_PICTURE_FILE_TITLE"]?><?else:?><?=$arElement["NAME"].' '.$arElement["PROPERTIES"]["CML2_ARTICLE"]["VALUE"]?><?endif;?>">
 					</a>
 				</div>
 				<div class="column">
-					<a href="<?=$arElement["DETAIL_PAGE_URL"]?>" class="name"><?=$arElement["NAME"]?></a>
+					<a href="<?=$arElement["DETAIL_PAGE_URL"]?>" class="name"><?=$arElement["NAME"].' '.$arElement["PROPERTIES"]["CML2_ARTICLE"]["VALUE"]?></a>
 				</div>
 				<div class="column">
 					<?if(isset($arElement["PROPERTIES"]["RATING"]["VALUE"])):?>

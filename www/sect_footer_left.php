@@ -1,9 +1,5 @@
 <?require_once($_SERVER["DOCUMENT_ROOT"]."/settings.php");?>
 
-
-
-
-
 <?if($TEMPLATE_FOOTER_VARIANT == "2" || $TEMPLATE_FOOTER_VARIANT == "6" || $TEMPLATE_FOOTER_VARIANT == "7"):?>
 	<div class="logo">
 		<?if(MAIN_PAGE === TRUE):?>

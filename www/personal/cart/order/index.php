@@ -4,6 +4,11 @@ if ($USER->IsAuthorized()):?>
 	<div class="personal-order-info">*Нажимая на кнопку оформить заказ, я даю согласие на <a href="/personal-info/" class="pilink">обработку персональных данных.</a><br /></div>
 <?endif?>
 <?$APPLICATION->IncludeComponent(
+    "bitrix:sale.order.ajax",
+    ".default",
+    Array()
+);?>
+<?/*$APPLICATION->IncludeComponent(
 	"bitrix:sale.order.ajax", 
 	".default", 
 	array(
@@ -105,4 +110,5 @@ if ($USER->IsAuthorized()):?>
 		"USE_CUSTOM_ERROR_MESSAGES" => "N"
 	),
 	false
-);?><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
+);*/?>
+    <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

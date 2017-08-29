@@ -794,9 +794,13 @@ $(window).on("ready", function(event){
 	}
 
 	var addCart = function(event){
-		
+
 		var $this = $(this);
 		var productID = $this.data("id");
+
+
+        yaCounter42154374.reachGoal('add_to_cart')
+
 		var quantity = $this.data("quantity");
 
 		var _arID = [];

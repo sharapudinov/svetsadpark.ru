@@ -506,7 +506,9 @@
 }
 
 @media all and (max-width: 940px){
-
+	#slider{
+		display: none;
+	}
 	#subHeader5{
 		height: 170px;
 	}
@@ -620,6 +622,10 @@
 		top: 0;
 	}
 
+	#subHeader5 .subTableColumn:first-child{
+		width: 120px;
+	}
+
 	#headerLine2 .user-geo-position-label{
 		display: none;
 	}
@@ -671,9 +677,10 @@
 		font-size: 14px;
 	}
 
+
 	#subHeader5 #logo,
 	#subHeader5 .subTableColumn:first-child{
-		width: 140px;
+		width: 100px;
 	}
 
 	#subHeader5 #logo{
@@ -710,6 +717,10 @@
 
 	#subHeader5 .topWishlist{
 		display: none;
+	}
+
+	#subHeader5 .subTableColumn:first-child{
+		width: 60px;
 	}
 
 	#subHeader5 .subTableColumn:last-child{

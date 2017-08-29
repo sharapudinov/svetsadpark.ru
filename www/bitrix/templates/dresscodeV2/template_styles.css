@@ -5853,7 +5853,10 @@ body.panels_white #brandList .item:nth-child(5n+1){
 	#mainMenu li a{
 		padding: 18px 24px;
 		display: block;
-		
+
+	}
+	.m_head_phone{
+		font-size: 20px;
 	}
 
 	#middleSlider{
@@ -6489,6 +6492,9 @@ body.panels_white #brandList .item:nth-child(5n+1){
 		margin: 0px;
 	}*/
 
+	#mainMenu li a{
+		font-size: 20px;
+	}
 	#brandList .heading{
 		padding-bottom: 24px;
 	}
@@ -6717,6 +6723,9 @@ body.panels_white #brandList .item:nth-child(5n+1){
 
 @media all and (max-width: 430px) {
 
+	#mainMenu li a{
+		font-size: 15px;
+	}
 	#requestPrice #requestPriceContainer{
 		height: 450px;
 	}
@@ -6764,6 +6773,7 @@ body.panels_white #brandList .item:nth-child(5n+1){
 	#headerTools .tools .telephone{
 		display: none !important;
 	}
+
 }
 
 #ORDER_CONFIRM_BUTTON{

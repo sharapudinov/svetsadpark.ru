@@ -17,8 +17,12 @@ IncludeTemplateLangFile(__FILE__);
             })(window,document,'script','dataLayer','GTM-MP2N2NH');</script>
         <!-- End Google Tag Manager -->
 
-
-
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/manifest.json">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="theme-color" content="#ffffff">
         <meta charset="<?=SITE_CHARSET?>">
 		<META NAME="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" type="image/x-icon" href="<?=SITE_TEMPLATE_PATH?>/images/favicon.ico" />
@@ -49,7 +53,7 @@ IncludeTemplateLangFile(__FILE__);
         <script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = location.protocol + '//vk.com/rtrg?r=NtBwcVMWVd1U6Ikw7nczdJs*8Jd4rANarcmPgGnIsWs9XKpS2xu84YPvjxUgsc5QFYBiNWduWAAKb1iPqHKmWkKKwQ5SXFE*7PvjYELVreUJe/JW/Z2RRQyGY8fMNUEtzt1gVxtnXFUWZhoqmUxC0TezD8uXwRek/6BSHGZu3b8-&pixel_id=1000017681';</script>
         <!-- Google Tag Manager -->
         <script>
-            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='<a href="https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f)">https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f)</a>;})(window,document,'script','dataLayer','GTM-MP2N2NH'
+//            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='<a href="https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f)">https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f)</a>;})(window,document,'script','dataLayer','GTM-MP2N2NH'
         </script>
         <!-- End Google Tag Manager -->
         <? include($_SERVER["DOCUMENT_ROOT"]. "/bitrix/templates/dresscodeV2/include/metric.php");?>

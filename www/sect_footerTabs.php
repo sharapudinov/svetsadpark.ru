@@ -1,4 +1,4 @@
-<div id="footerTabsCaption">
+    <div id="footerTabsCaption">
 	<div class="wrapper">
 		<div class="items">
 			 <?$APPLICATION->ShowViewContent("sale_viewed_product_view_content_tab");?> <?$APPLICATION->ShowViewContent("catalog_top_view_content_tab");?>

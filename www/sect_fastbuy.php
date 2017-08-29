@@ -17,7 +17,7 @@
 					<div class="formLine"><input name="phone" type="text" placeholder="Телефон*" value="" id="fastBuyFormTelephone"></div>
 					<div class="formLine"><textarea name="message" cols="30" rows="10" placeholder="Сообщение" id="fastBuyFormMessage"></textarea></div>
 					<div class="formLine"><input type="checkbox" name="personalInfoFastBuy" id="personalInfoFastBuy"><label for="personalInfoFastBuy">Я согласен на <a href="/personal-info/" class="pilink">обработку персональных данных.</a>*</label></div>
-					<div class="formLine"><a href="#" id="fastBuyFormSubmit"><img src="<?=SITE_TEMPLATE_PATH?>/images/incart.png" alt="Купить в один клик"> Купить в один клик</a></div>
+					<div class="formLine"><a onclick="yaCounter42154374.reachGoal(' buy_one_click');return(true)" href="#" id="fastBuyFormSubmit"><img src="<?=SITE_TEMPLATE_PATH?>/images/incart.png" alt="Купить в один клик"> Купить в один клик</a></div>
 				</form>
 			</div>
 		</div>

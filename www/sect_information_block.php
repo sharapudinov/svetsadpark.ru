@@ -10,7 +10,10 @@
 							<img src="<?=SITE_TEMPLATE_PATH?>/images/cont1.png">
 						</div>
 						<div class="tc">
-							<a style="text-decoration:none;color:black" href="tel:+78007751205" title="Номер телефона интернет-магазина Svetsadpark">+7-800-775-12-05</a>
+                            <a onclick="yaCounter42154374.reachGoal('buy_one_click');return(true)"
+                               class="phone_alloka" href="tel:+78007751205"
+                               title="Номер телефона интернет-магазина Svetsadpark"
+                               style="text-decoration:none;color:inherit">8-800-775-12-05</a>
 						</div>
 					</div>
 				</div>
@@ -20,9 +23,10 @@
 							<img src="<?=SITE_TEMPLATE_PATH?>/images/cont2.png">
 						</div>
 						<div class="tc">
-							<a href="mailto:info@SvetSadPark.ru">info@SvetSadPark.ru</a><br>
-						</div>
-					</div>
+                            <a href="mailto:info@SvetSadPark.ru"
+                               onclick="yaCounter42154374.reachGoal('email_click');return(true)" class="email">info@SvetSadPark.ru</a>
+                        </div>
+                    </div>
 				</div>
 				<div class="information-list-item">
 					<div class="tb">

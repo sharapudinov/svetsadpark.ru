@@ -6,6 +6,10 @@ $APPLICATION->SetPageProperty('description', 'Последние новости 
 $APPLICATION->SetPageProperty('keywords', 'новости интернет-магазина, новости SvetSadPark.ru, новости о садовых светильниках, новости о парковых светильниках, новости о садово-парковом освещении');
 
 ?>
+    <div class="global-block-container">
+    <div class="global-content-block">
+    <div class="bx_page">
+
 <?$APPLICATION->IncludeComponent(
 	"bitrix:news", 
 	".default", 
@@ -103,4 +107,24 @@ $APPLICATION->SetPageProperty('keywords', 'новости интернет-ма�
 		)
 	),
 	false
-);?><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
+);?>
+    </div>
+    </div>
+        <div class="global-information-block">
+            <?$APPLICATION->IncludeComponent(
+                "bitrix:main.include",
+                ".default",
+                array(
+                    "COMPONENT_TEMPLATE" => ".default",
+                    "AREA_FILE_SHOW" => "sect",
+                    "AREA_FILE_SUFFIX" => "information_block",
+                    "AREA_FILE_RECURSIVE" => "Y",
+                    "EDIT_TEMPLATE" => ""
+                ),
+                false
+            );?>
+        </div>
+    </div>
+
+
+<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

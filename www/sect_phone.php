@@ -1,7 +1,4 @@
 <span class="heading"> </span>
-
-
-
 <?$APPLICATION->IncludeComponent(
 	"bitrix:form.result.new", 
 	"modal", 

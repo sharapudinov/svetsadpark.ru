@@ -73,7 +73,8 @@
 		<?endif;?>
 		<div class="webFormError"></div>
 		<div class="webFormTools">
-			<input <?=(intval($arResult["F_RIGHT"]) < 10 ? "disabled=\"disabled\"" : "");?> type="submit" name="web_form_submit" value="<?=htmlspecialcharsbx(strlen(trim($arResult["arForm"]["BUTTON"])) <= 0 ? GetMessage("FORM_ADD") : $arResult["arForm"]["BUTTON"]);?>" class="sendWebFormDw" />
+			<input onclick="yaCounter42154374.reachGoal('feedbak_form_send');return(true)"
+                    <?=(intval($arResult["F_RIGHT"]) < 10 ? "disabled=\"disabled\"" : "");?> type="submit" name="web_form_submit" value="<?=htmlspecialcharsbx(strlen(trim($arResult["arForm"]["BUTTON"])) <= 0 ? GetMessage("FORM_ADD") : $arResult["arForm"]["BUTTON"]);?>" class="sendWebFormDw" />
 			<input type="hidden" name="web_form_apply" value="Y" />
 			<input type="reset" value="<?=GetMessage("FORM_RESET");?>" />
 			<p><span class="form-required starrequired">*</span> - <?=GetMessage("FORM_REQUIRED_FIELDS")?></p>
